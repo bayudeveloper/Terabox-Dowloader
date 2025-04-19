@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeraBox Downloader | Aesthetic Download Tool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    
+    <div class="container">
+        <header class="glass-card">
+            <div class="logo">
+                <i class="fas fa-cloud-download-alt"></i>
+                <h1>TeraBox<span>Downloader</span></h1>
+            </div>
+            <p>Download video, foto, dan file dari TeraBox dengan cepat dan mudah</p>
+        </header>
+
+        <main class="glass-card">
+            <div class="download-form">
+                <div class="input-group">
+                    <input type="text" id="terabox-url" placeholder="Masukkan link TeraBox disini..." required>
+                    <button id="download-btn"><i class="fas fa-download"></i> Download</button>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="quality" value="high" checked> Kualitas Tinggi
+                    </label>
+                    <label>
+                        <input type="radio" name="quality" value="low"> Kualitas Rendah
+                    </label>
+                </div>
+            </div>
+
+            <div class="result-container hidden">
+                <div class="file-info">
+                    <div class="thumbnail">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="details">
+                        <h3 class="file-name">Nama File</h3>
+                        <p class="file-size">Ukuran: -</p>
+                        <p class="file-type">Tipe: -</p>
+                    </div>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <span class="progress-text">0%</span>
+                </div>
+                <button id="direct-download" class="btn-primary"><i class="fas fa-arrow-down"></i> Download Sekarang</button>
+                <a id="download-link" href="#" class="hidden" download></a>
+            </div>
+        </main>
+
+        <div class="features glass-card">
+            <h2>Fitur Unggulan</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Cepat</h3>
+                    <p>Download dengan kecepatan tinggi tanpa batas</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Aman</h3>
+                    <p>Tidak menyimpan data pribadi Anda</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-video"></i>
+                    <h3>Multi Format</h3>
+                    <p>Support video, foto, dokumen dan lainnya</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsif</h3>
+                    <p>Bisa digunakan di semua perangkat</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="glass-card">
+        <p>© 2023 TeraBox Downloader | Dibuat dengan <i class="fas fa-heart"></i> untuk Anda</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
